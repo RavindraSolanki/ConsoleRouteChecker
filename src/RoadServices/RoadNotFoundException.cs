@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RouteChecker.RoadServices
 {
-    public class Class1
+    public class RoadNotFoundException : Exception
     {
+        public RoadNotFoundException(string message) : base(message) { }
     }
 }
